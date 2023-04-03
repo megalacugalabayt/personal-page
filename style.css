@@ -1,0 +1,55 @@
+
+  
+    .navbar-brand {
+        font-family: 'Cinzel Decorative', cursive;
+        font-weight: bolder;
+    }
+
+    body {
+        background-color: #fee440;
+    }
+
+    .content {
+        background-color: #FFF8DC;
+        border-radius: .4em;
+        box-shadow: 0 0 1em rgba(0, 0, 0, .25);
+        margin: 10%;
+        text-align: center;
+        top: 50%;
+    }
+   
+/*animasyon başlangıç*/
+    .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #BC8F8F 50%, #D2B48C 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+
+    .bg3 {
+        animation-duration: 5s;
+    }
+
+    
+
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(25%);
+        }
+    }
+
+/*animasyon bitiş*/
